@@ -1,5 +1,5 @@
 package io.bunsan.gangame.rated
 
-import android.app.Fragment
+import android.support.v4.app.Fragment
 
 class TopRatedFragment : Fragment()
