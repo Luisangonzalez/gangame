@@ -1,5 +1,10 @@
 package io.bunsan.gangame.rated
 
-import android.support.v4.app.Fragment
+import com.example.commons.BaseFragment
+import io.bunsan.gangame.R
 
-class TopRatedFragment : Fragment()
+class TopRatedFragment : BaseFragment() {
+    override fun getLayoutRes(): Int {
+        return  R.layout.fragment_top_rated
+    }
+}

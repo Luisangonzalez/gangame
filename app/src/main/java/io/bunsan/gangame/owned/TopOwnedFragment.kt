@@ -1,7 +1,11 @@
 package io.bunsan.gangame.owned
 
-import android.support.v4.app.Fragment
+import com.example.commons.BaseFragment
+import io.bunsan.gangame.R
 
-class TopOwnedFragment : Fragment() {
+class TopOwnedFragment : BaseFragment() {
+    override fun getLayoutRes(): Int {
+        return  R.layout.fragment_top_owned
+    }
 
 }

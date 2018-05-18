@@ -4,7 +4,7 @@ import com.example.commons.BaseFragment
 import io.bunsan.gangame.R
 
 class DealsFragment() : BaseFragment() {
-    override fun getLayoutResId(): Int {
+    override fun getLayoutRes(): Int {
         return  R.layout.fragment_deals
     }
 }
