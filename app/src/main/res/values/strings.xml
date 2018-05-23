@@ -4,4 +4,6 @@
     <string name="tittle_most_owned">Most Owned</string>
     <string name="tittle_deals">Deals</string>
     <string name="label_ratings">Ratings</string>
+    <string name="label_deal_prize">Deal Prize</string>
+    <string name="label_original">Original</string>
 </resources>
