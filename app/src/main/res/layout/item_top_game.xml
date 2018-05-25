@@ -17,9 +17,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginRight="16dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -34,15 +34,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.26041666" />
+            app:layout_constraintGuide_begin="104dp" />
 
         <TextView
             android:id="@+id/labelTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:maxLines="2"
@@ -50,7 +48,6 @@
             android:textColor="@android:color/white"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="@+id/guideline"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Silence of the sleep" />
@@ -72,7 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.73" />
+            app:layout_constraintGuide_percent="0.8" />
 
         <android.support.constraint.Guideline
             android:id="@+id/guideline3"
@@ -85,6 +82,8 @@
             android:id="@+id/labelPublisher"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:maxLines="1"
             android:text="Valve"
@@ -92,8 +91,56 @@
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintRight_toLeftOf="@+id/guideline2"
-            app:layout_constraintStart_toStartOf="@+id/labelTitle"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
             app:layout_constraintTop_toBottomOf="@+id/labelTitle" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="55dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="65465416"
+            android:textColor="@color/blue_gray"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/labelMetacriticScore"
+            app:layout_constraintStart_toEndOf="@+id/labelMetacriticScore"
+            app:layout_constraintTop_toTopOf="@+id/labelMetacriticScore" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="69€"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/labelTitle"
+            app:layout_constraintEnd_toEndOf="@+id/labelPublisher"
+            app:layout_constraintStart_toEndOf="@+id/labelTitle"
+            app:layout_constraintTop_toTopOf="@+id/labelTitle" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            tools:layout_editor_absoluteY="42dp" />
 
     </android.support.constraint.ConstraintLayout>
 
